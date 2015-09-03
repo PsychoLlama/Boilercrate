@@ -6,7 +6,7 @@ $content-background-color: #e8e8e8;
 @import "components/all";
 
 body {
-  background-color: $black;
+  background-color: $content-background-color;
   position: relative;
 }
 

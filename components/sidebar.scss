@@ -1,15 +1,18 @@
 $navigation-background-color: $black !default;
 $navigation-text-color: $wrapper-background-color !default;
+
+// columns / total columns
 $sidebar-width: 6 / 12 * 100%;
-$sidebar-side: left;
+$sidebar-adjacent-side: left;
 
 .sidebar {
   color: $navigation-text-color;
-  border-#{$sidebar-side}: 1px solid darken($navigation-background-color, 5%);
+  border-#{$sidebar-adjacent-side}: 1px solid darken($navigation-background-color, 5%);
+  min-height: 100%;
   width: $sidebar-width;
   position: fixed;
   top: 0;
-  #{$sidebar-side}: 100%;
+  #{$sidebar-adjacent-side}: 100%;
   
   li a {
     display: block;
@@ -27,16 +30,16 @@ $sidebar-side: left;
 
 .all-content {
   position: relative;
-  #{$sidebar-side}: 0%;
+  #{$sidebar-adjacent-side}: 0%;
   
   &.sidebar-reveal {
 
     @media screen and (max-width: $tablet-size) {
       position: relative;
-      #{$sidebar-side}: -$sidebar-width;
+      #{$sidebar-adjacent-side}: -$sidebar-width;
 
       & ~ .sidebar {
-        #{$sidebar-side}: 100% - $sidebar-width;
+        #{$sidebar-adjacent-side}: 100% - $sidebar-width;
       }
     }
   }
