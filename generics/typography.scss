@@ -1,0 +1,64 @@
+$base-text-color: #303438;
+
+.text-spread {
+  letter-spacing: 40px;
+  text-transform: uppercase;
+
+  .last-letter {
+    letter-spacing: normal;
+  }
+}
+
+.lead {
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+@mixin align($flow) {
+  text-align: $flow;
+}
+.text-left {
+  @include align(left);
+}
+.text-center {
+  @include align(center);
+}
+.text-right {
+  @include align(right);
+}
+.text-justify {
+  @include align(justify);
+}
+
+.text-muted {
+  color: rgba($base-text-color, 0.5);
+}
+
+html {
+  font-family: helvetica-neue, helvetica, arial, sans-serif;
+  color: $base-text-color;
+  line-height: 1.3em;
+}
+
+a {
+  color: $base-text-color;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    @extend .text-muted;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 30px 0 10px;
+  line-height: 1.4em;
+  font-weight: 300;
+}

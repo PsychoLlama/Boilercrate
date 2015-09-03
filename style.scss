@@ -1,0 +1,18 @@
+
+$black: #202428;
+$content-background-color: #e8e8e8;
+
+@import "generics/all";
+@import "components/all";
+
+body {
+  background-color: $black;
+  position: relative;
+}
+
+.all-content {
+  background-color: $content-background-color;
+}
+.title {
+  margin-top: 0;
+}

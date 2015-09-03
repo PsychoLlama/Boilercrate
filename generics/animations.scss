@@ -1,0 +1,24 @@
+// Check out keyframes
+
+body,
+header
+div,
+.all-content,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+p,
+blockquote,
+aside,
+form,
+footer
+{
+  position: relative;
+  transition: left .2s, right .2s, top .2s, bottom .2s, color .1s, opacity .5s;
+}

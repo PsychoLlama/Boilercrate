@@ -1,0 +1,36 @@
+$navigation-background-color: $black !default;
+$navigation-text-color: $content-background-color !default;
+$navbar-link-hover: gray;
+
+.navbar {
+  @extend .row;
+  background-color: $navigation-background-color;
+  box-sizing: border-box;
+  
+  .collapse {
+    @media screen and (max-width: 500px) {
+      & > * {
+        display: none;
+      }
+      .collapse-icon {
+        display: block;
+      }
+    }
+  }
+  
+  a:visited {
+    color: darken($navigation-text-color, 10%)
+  }
+  a:hover {
+    color: $navbar-link-hover;
+    text-decoration: none;
+  }
+  
+  p,
+  a,
+  span {
+    color: $navigation-text-color;
+    margin: 0;
+    padding: 15px 15px;
+  }
+}

@@ -1,0 +1,68 @@
+$vertical-padding: 25px;
+
+.ledge {
+  border-bottom: 1px solid rgba(black, 0.08);
+}
+.ledge-top {
+  border-top: 1px solid rgba(black, 0.08);
+}
+
+.row {
+  overflow-y: hidden;
+  &:after {
+    display: table-cell;
+    clear: both;
+  }
+}
+
+.all-content {
+  min-height: 100vh;
+  position: relative;
+}
+
+.pad-content {
+  padding: ($vertical-padding / 2);
+}
+
+.pad-content-vertical {
+  padding-top: $vertical-padding;
+  padding-bottom: $vertical-padding;
+}
+.pad-content-horizontal {
+  padding-left: ($vertical-padding / 2);
+  padding-right: ($vertical-padding / 2);
+}
+
+@mixin pull($side) {
+  float: $side;
+  overflow-y: hidden;
+  
+  &:after {
+    display: table-cell;
+  }
+}
+.pull-right {
+  @include pull(right);
+}
+.pull-left {
+  @include pull(left);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  
+  li {
+    list-style-type: none;
+  }
+}
+section {
+  margin: 0;
+}
+
+.footer {
+  overflow-y: auto;
+}
+body {
+  margin: 0;
+}

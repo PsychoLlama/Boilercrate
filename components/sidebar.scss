@@ -1,0 +1,47 @@
+$navigation-background-color: $black !default;
+$navigation-text-color: $wrapper-background-color !default;
+$sidebar-width: 6 / 12 * 100%;
+$sidebar-side: left;
+
+.sidebar {
+  color: $navigation-text-color;
+  border-#{$sidebar-side}: 1px solid darken($navigation-background-color, 5%);
+  width: $sidebar-width;
+  position: fixed;
+  top: 0;
+  #{$sidebar-side}: 100%;
+  
+  li a {
+    display: block;
+  }
+  
+  .sidebar-item:hover {
+    background-color: darken($navigation-background-color, 10%);
+    cursor: pointer;
+  }
+  
+  .active {
+    @extend .sidebar-item:hover;
+  }
+}
+
+.all-content {
+  position: relative;
+  #{$sidebar-side}: 0%;
+  
+  &.sidebar-reveal {
+
+    @media screen and (max-width: $tablet-size) {
+      position: relative;
+      #{$sidebar-side}: -$sidebar-width;
+
+      & ~ .sidebar {
+        #{$sidebar-side}: 100% - $sidebar-width;
+      }
+    }
+  }
+}
+
+body {
+  overflow-x: hidden;
+}

@@ -1,0 +1,60 @@
+$mobile-size: 0;
+$tablet-size: 768px;
+$desktop-size: 992px;
+
+@mixin column($width) {
+  width: $width;
+  float: left;
+  box-sizing: border-box;
+  overflow-x: auto;
+  
+  &:after {
+    display: table-cell;
+  }
+}
+
+@mixin responsive($width, $applies-to) {
+  @media screen and (min-width: $applies-to) {
+    @include column($width: $width);
+  }
+}
+
+$screen-types: mobile, tablet, desktop;
+
+@function get-size($type) {
+  @if ($type == "mobile") {
+    @return $mobile-size
+  }
+  @if ($type == "tablet") {
+    @return $tablet-size
+  }
+  @if ($type == "desktop") {
+    @return $desktop-size
+  }
+}
+
+@each $screen-type in $screen-types {
+  @for $size from 1 through 12 {
+    .#{$screen-type}-#{$size} {
+      @include responsive(100% * ($size / 12), get-size($screen-type));
+    }
+  
+    .#{$screen-type}-offset-#{$size} {
+      @media screen and (min-width: get-size($screen-type)) {
+        margin-left: 100% * ($size / 12);
+      }
+    }
+  }
+  
+  .#{$screen-type}-show {
+    @media screen and (min-width: get-size($screen-type)) {
+      display: initial;
+    }
+  }
+  
+  .#{$screen-type}-hide {
+    @media screen and (min-width: get-size($screen-type)) {
+      display: none;
+    }
+  }
+}
