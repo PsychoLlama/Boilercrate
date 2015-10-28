@@ -1,0 +1,876 @@
+/* line 20, /Users/overlord/Desktop/redesign/boilercrate/generics/animations.scss */
+body,
+header
+div,
+.all-content,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+p,
+blockquote,
+aside,
+form,
+footer {
+  position: relative;
+  transition: left 0.2s, right 0.2s, top 0.2s, bottom 0.2s, color 0.1s, opacity 0.5s; }
+
+/* line 3, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.ledge {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+
+/* line 6, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.ledge-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.08); }
+
+/* line 10, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.row, .navbar {
+  overflow-y: hidden; }
+  /* line 12, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+  .row:after, .navbar:after {
+    display: table-cell;
+    clear: both; }
+
+/* line 18, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.all-content {
+  min-height: 100vh;
+  position: relative; }
+
+/* line 23, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.pad-content {
+  padding: 12.5px 25px; }
+
+/* line 27, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.pad-content-vertical {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+/* line 31, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.pad-content-horizontal {
+  padding-left: 12.5px;
+  padding-right: 12.5px; }
+
+/* line 35, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.pad-content-top {
+  padding-top: 5px; }
+
+/* line 38, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.pad-content-bottom {
+  padding-bottom: 5px; }
+
+/* line 50, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.pull-right {
+  float: right;
+  overflow-y: hidden; }
+  /* line 46, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+  .pull-right:after {
+    display: table-cell; }
+
+/* line 53, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.pull-left {
+  float: left;
+  overflow-y: hidden; }
+  /* line 46, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+  .pull-left:after {
+    display: table-cell; }
+
+/* line 57, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+ul {
+  margin: 0;
+  padding: 0; }
+  /* line 61, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+  ul li {
+    list-style-type: none; }
+
+/* line 65, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+section {
+  margin: 0; }
+
+/* line 69, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+.footer {
+  overflow-y: auto; }
+
+/* line 72, /Users/overlord/Desktop/redesign/boilercrate/generics/layout.scss */
+body {
+  margin: 0; }
+
+/* line 3, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+.text-spread {
+  letter-spacing: 40px;
+  text-transform: uppercase; }
+  /* line 7, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+  .text-spread .last-letter {
+    letter-spacing: normal; }
+
+/* line 12, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+.lead {
+  letter-spacing: 1px;
+  font-weight: 300; }
+
+/* line 20, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+.text-left {
+  text-align: left; }
+
+/* line 23, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+.text-center {
+  text-align: center; }
+
+/* line 26, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+.text-right {
+  text-align: right; }
+
+/* line 29, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+.text-justify {
+  text-align: justify; }
+
+/* line 33, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+.text-muted, a:visited {
+  color: rgba(48, 52, 56, 0.5); }
+
+/* line 37, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+html {
+  font-family: helvetica-neue, helvetica, arial, sans-serif;
+  color: #303438;
+  line-height: 1.3em; }
+
+/* line 43, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+a {
+  color: #303438;
+  text-decoration: none; }
+  /* line 47, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+  a:hover, .navbar a.active,
+  .navbar .active {
+    text-decoration: underline; }
+
+/* line 60, /Users/overlord/Desktop/redesign/boilercrate/generics/typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 30px 0 10px;
+  line-height: 1.4em;
+  font-weight: 300; }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-1 {
+    width: 8.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-1:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-1 {
+    margin-left: 8.33333%; } }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-2 {
+    width: 16.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-2:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-2 {
+    margin-left: 16.66667%; } }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-3 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-3:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-3 {
+    margin-left: 25%; } }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-4 {
+    width: 33.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-4:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-4 {
+    margin-left: 33.33333%; } }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-5 {
+    width: 41.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-5:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-5 {
+    margin-left: 41.66667%; } }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-6 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-6:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-6 {
+    margin-left: 50%; } }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-7 {
+    width: 58.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-7:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-7 {
+    margin-left: 58.33333%; } }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-8 {
+    width: 66.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-8:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-8 {
+    margin-left: 66.66667%; } }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-9 {
+    width: 75%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-9:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-9 {
+    margin-left: 75%; } }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-10 {
+    width: 83.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-10:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-10 {
+    margin-left: 83.33333%; } }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-11 {
+    width: 91.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-11:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-11 {
+    margin-left: 91.66667%; } }
+
+@media screen and (min-width: 0) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-12 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .mobile-12:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 0) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-offset-12 {
+    margin-left: 100%; } }
+
+@media screen and (min-width: 0) {
+  /* line 47, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-show {
+    display: initial; } }
+
+@media screen and (min-width: 0) {
+  /* line 53, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .mobile-hide {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-1 {
+    width: 8.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-1:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-1 {
+    margin-left: 8.33333%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-2 {
+    width: 16.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-2:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-2 {
+    margin-left: 16.66667%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-3 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-3:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-3 {
+    margin-left: 25%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-4 {
+    width: 33.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-4:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-4 {
+    margin-left: 33.33333%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-5 {
+    width: 41.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-5:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-5 {
+    margin-left: 41.66667%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-6 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-6:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-6 {
+    margin-left: 50%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-7 {
+    width: 58.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-7:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-7 {
+    margin-left: 58.33333%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-8 {
+    width: 66.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-8:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-8 {
+    margin-left: 66.66667%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-9 {
+    width: 75%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-9:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-9 {
+    margin-left: 75%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-10 {
+    width: 83.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-10:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-10 {
+    margin-left: 83.33333%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-11 {
+    width: 91.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-11:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-11 {
+    margin-left: 91.66667%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-12 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .tablet-12:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 768px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-offset-12 {
+    margin-left: 100%; } }
+
+@media screen and (min-width: 768px) {
+  /* line 47, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-show {
+    display: initial; } }
+
+@media screen and (min-width: 768px) {
+  /* line 53, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .tablet-hide {
+    display: none; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-1 {
+    width: 8.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-1:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-1 {
+    margin-left: 8.33333%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-2 {
+    width: 16.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-2:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-2 {
+    margin-left: 16.66667%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-3 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-3:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-3 {
+    margin-left: 25%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-4 {
+    width: 33.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-4:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-4 {
+    margin-left: 33.33333%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-5 {
+    width: 41.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-5:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-5 {
+    margin-left: 41.66667%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-6 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-6:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-6 {
+    margin-left: 50%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-7 {
+    width: 58.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-7:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-7 {
+    margin-left: 58.33333%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-8 {
+    width: 66.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-8:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-8 {
+    margin-left: 66.66667%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-9 {
+    width: 75%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-9:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-9 {
+    margin-left: 75%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-10 {
+    width: 83.33333%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-10:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-10 {
+    margin-left: 83.33333%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-11 {
+    width: 91.66667%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-11:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-11 {
+    margin-left: 91.66667%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 37, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-12 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    overflow-x: auto; }
+    /* line 11, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+    .desktop-12:after {
+      display: table-cell; } }
+
+@media screen and (min-width: 992px) {
+  /* line 40, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-offset-12 {
+    margin-left: 100%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 47, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-show {
+    display: initial; } }
+
+@media screen and (min-width: 992px) {
+  /* line 53, /Users/overlord/Desktop/redesign/boilercrate/components/grid.scss */
+  .desktop-hide {
+    display: none; } }
+
+/* line 4, /Users/overlord/Desktop/redesign/boilercrate/components/jumbotron.scss */
+.jumbotron {
+  margin: 0;
+  margin-bottom: 3%;
+  padding: 10% 0;
+  position: relative;
+  background-color: #f0f0f0;
+  overflow-x: auto; }
+  /* line 12, /Users/overlord/Desktop/redesign/boilercrate/components/jumbotron.scss */
+  .jumbotron .heading {
+    margin: 0;
+    font-size: 200%; }
+  /* line 17, /Users/overlord/Desktop/redesign/boilercrate/components/jumbotron.scss */
+  .jumbotron .lead {
+    margin-top: 30px; }
+
+/* line 5, /Users/overlord/Desktop/redesign/boilercrate/components/navbar.scss */
+.navbar {
+  color: #e8e8e8;
+  background-color: #202428;
+  box-sizing: border-box; }
+  @media screen and (max-width: 500px) {
+    /* line 13, /Users/overlord/Desktop/redesign/boilercrate/components/navbar.scss */
+    .navbar .collapse > * {
+      display: none; }
+    /* line 16, /Users/overlord/Desktop/redesign/boilercrate/components/navbar.scss */
+    .navbar .collapse .collapse-icon {
+      display: block; } }
+  /* line 22, /Users/overlord/Desktop/redesign/boilercrate/components/navbar.scss */
+  .navbar a {
+    color: #e8e8e8; }
+  /* line 26, /Users/overlord/Desktop/redesign/boilercrate/components/navbar.scss */
+  .navbar a:visited {
+    color: #cfcfcf; }
+  /* line 29, /Users/overlord/Desktop/redesign/boilercrate/components/navbar.scss */
+  .navbar a:hover, .navbar a.active,
+  .navbar .active {
+    color: gray;
+    text-decoration: none; }
+  /* line 41, /Users/overlord/Desktop/redesign/boilercrate/components/navbar.scss */
+  .navbar p,
+  .navbar a,
+  .navbar span {
+    margin: 0;
+    padding: 15px 15px; }
+
+/* line 8, /Users/overlord/Desktop/redesign/boilercrate/components/sidebar.scss */
+.sidebar {
+  background-color: #202428;
+  border-left: 1px solid #15171a;
+  min-height: 100%;
+  width: 75%;
+  position: fixed;
+  top: 0;
+  left: 100%; }
+  /* line 17, /Users/overlord/Desktop/redesign/boilercrate/components/sidebar.scss */
+  .sidebar li a {
+    display: block; }
+  /* line 21, /Users/overlord/Desktop/redesign/boilercrate/components/sidebar.scss */
+  .sidebar .sidebar-item:hover {
+    background-color: #090a0c;
+    cursor: pointer; }
+  /* line 26, /Users/overlord/Desktop/redesign/boilercrate/components/sidebar.scss */
+  .sidebar .active {
+    background-color: #16191b;
+    color: #e8e8e8; }
+  /* line 33, /Users/overlord/Desktop/redesign/boilercrate/components/sidebar.scss */
+  .sidebar p,
+  .sidebar a,
+  .sidebar span {
+    color: #e8e8e8;
+    text-decoration: none;
+    margin: 0;
+    padding: 15px 15px; }
+
+/* line 41, /Users/overlord/Desktop/redesign/boilercrate/components/sidebar.scss */
+.all-content {
+  position: relative;
+  left: 0%; }
+  @media screen and (max-width: 768px) {
+    /* line 45, /Users/overlord/Desktop/redesign/boilercrate/components/sidebar.scss */
+    .all-content.sidebar-reveal {
+      position: relative;
+      left: -75%; }
+      /* line 51, /Users/overlord/Desktop/redesign/boilercrate/components/sidebar.scss */
+      .all-content.sidebar-reveal ~ .sidebar {
+        left: 25%; } }
+
+/* line 58, /Users/overlord/Desktop/redesign/boilercrate/components/sidebar.scss */
+body {
+  overflow-x: hidden; }
+
+/* line 8, /Users/overlord/Desktop/redesign/boilercrate/style.scss */
+body {
+  background-color: #e8e8e8;
+  position: relative; }
+
+/* line 13, /Users/overlord/Desktop/redesign/boilercrate/style.scss */
+.all-content {
+  background-color: #e8e8e8; }
+
+/* line 16, /Users/overlord/Desktop/redesign/boilercrate/style.scss */
+.title {
+  margin-top: 0; }
+
+/* line 20, /Users/overlord/Desktop/redesign/boilercrate/style.scss */
+.background-white {
+  background-color: #f0f0f0; }
+
+/*# sourceMappingURL=style.css.map */
